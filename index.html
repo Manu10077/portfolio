@@ -1,0 +1,661 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adwaith P - Electrical & Computer Engineering Student</title>
+    <meta name="description" content="Portfolio of Adwaith P - Final year B.Tech student specializing in IoT, Machine Learning, and Full-Stack Development">
+    <meta name="author" content="Adwaith P">
+    <meta name="keywords" content="IoT, Machine Learning, Full-Stack Development, ESP32, Python, JavaScript, Engineering">
+    
+    <meta property="og:title" content="Adwaith P - Tech Portfolio">
+    <meta property="og:description" content="Electrical & Computer Engineering student passionate about IoT, ML, and Full-Stack Development">
+    <meta property="og:type" content="website">
+    
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap">
+    <link rel="stylesheet" href="portfolio.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="container">
+            <div class="nav-content">
+                <div class="logo">Adwaith P</div>
+                
+                <div class="nav-links desktop-nav">
+                    <a href="#home" class="nav-link">Home</a>
+                    <a href="#about" class="nav-link">About</a>
+                    <a href="#projects" class="nav-link">Projects</a>
+                    <a href="#services" class="nav-link">Services</a>
+                    <a href="#contact" class="nav-link">Contact</a>
+                </div>
+                
+                <button class="mobile-menu-btn" id="mobileMenuBtn">
+                    <span class="hamburger"></span>
+                    <span class="hamburger"></span>
+                    <span class="hamburger"></span>
+                </button>
+            </div>
+            
+            <div class="mobile-nav" id="mobileNav">
+                <a href="#home" class="mobile-nav-link">Home</a>
+                <a href="#about" class="mobile-nav-link">About</a>
+                <a href="#projects" class="mobile-nav-link">Projects</a>
+                <a href="#services" class="mobile-nav-link">Services</a>
+                <a href="#contact" class="mobile-nav-link">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-bg-grid"></div>
+        <div class="hero-gradient"></div>
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-text">
+                    <p class="hero-greeting">Hello, I'm</p>
+                    <h1 class="hero-name">Adwaith P</h1>
+                    <p class="hero-title">Electrical & Computer Engineering Student</p>
+                    <p class="hero-description">
+                        Passionate about IoT, Machine Learning, and Full-Stack Development. 
+                        Building smart systems that combine sensors, automation, and cloud integration.
+                    </p>
+                    
+                    <div class="skills-pills">
+                        <span class="skill-pill">IoT Systems</span>
+                        <span class="skill-pill">Machine Learning</span>
+                        <span class="skill-pill">Full-Stack Development</span>
+                        <span class="skill-pill">Python</span>
+                        <span class="skill-pill">JavaScript</span>
+                        <span class="skill-pill">ESP32</span>
+                    </div>
+                    
+                    <div class="hero-buttons">
+                        <button class="btn btn-hero">
+                            <svg class="btn-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M21 15v4a2 2 0 01-2 2H5a2 2 0 01-2-2v-4"/>
+                                <polyline points="7,10 12,15 17,10"/>
+                                <line x1="12" y1="15" x2="12" y2="3"/>
+                            </svg>
+                            <a href="Document1.docx" download="Adwaith_Resume.docx" class="btn">Download Resume</a>
+
+                        </button>
+                        <button class="btn btn-outline" onclick="scrollToSection('contact')">
+                            Get In Touch
+                        </button>
+                    </div>
+                    
+                    <div class="social-links">
+                        <a href="https://github.com/Manu10077" target="_blank" class="social-link">
+                            <svg viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+                            </svg>
+                        </a>
+                        <a href="https://www.linkedin.com/in/adwaith-p-b465b2293" target="_blank" class="social-link">
+                            <svg viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
+                            </svg>
+                        </a>
+                        <a href="https://www.youtube.com/@ANIME._Mix" target="_blank" class="social-link">
+                            <svg viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/>
+                            </svg>
+                        </a>
+                        <a href="mailto:adwaithaadhi12@gmail.com" class="social-link">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
+                                <polyline points="22,6 12,13 2,6"/>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="hero-image">
+                    <div class="profile-container">
+                        <div class="profile-glow"></div>
+                        <div class="profile-image">
+                            <img src="pic.jpg" alt="Adwaith P">
+                        </div>
+                        <div class="floating-dot dot-1"></div>
+                        <div class="floating-dot dot-2"></div>
+                        <div class="floating-dot dot-3"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">About Me</h2>
+                <p class="section-description">
+                    A passionate engineering student with a love for innovation and technology, 
+                    constantly exploring the intersection of hardware and software.
+                </p>
+            </div>
+            
+            <div class="about-bio card-tech">
+                <p>I'm Adwaith P, a final-year B.Tech student specializing in Electrical and Computer Engineering 
+                at TKM College of Engineering. My passion lies in creating smart systems that seamlessly integrate 
+                IoT devices, machine learning algorithms, and full-stack web applications.</p>
+                
+                <p>With expertise in Python, JavaScript, ESP32, and cloud platforms, I enjoy building projects 
+                that solve real-world problems. From wireless motion detection systems to AI-powered applications, 
+                I'm always excited to push the boundaries of what's possible with technology.</p>
+                
+                <p>When I'm not coding or tinkering with hardware, you can find me creating content for my YouTube 
+                channel, where I've been sharing my passion for anime and technology for over 3 years.</p>
+            </div>
+            
+            <div class="about-content">
+                <div class="education-section">
+                    <div class="section-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M22 10v6M2 10l10-5 10 5-10 5z"/>
+                            <path d="M6 12v5c3 3 9 3 12 0v-5"/>
+                        </svg>
+                    </div>
+                    <h3>Education</h3>
+                    
+                    <div class="timeline">
+                        <div class="timeline-item card-tech">
+                            <h4>B.Tech in Electrical and Computer Engineering</h4>
+                            <p class="institution">TKM College of Engineering</p>
+                            <div class="timeline-meta">
+                                <span>2022 - 2026 (Expected)</span>
+                                <span>4th Year</span>
+                            </div>
+                        </div>
+                        
+                        <div class="timeline-item card-tech">
+                            <h4>12th Standard</h4>
+                            <p class="institution">JNV Calicut</p>
+                            <div class="timeline-meta">
+                                <span>2022</span>
+                                <span>Passed with 78%</span>
+                            </div>
+                        </div>
+                        
+                        <div class="timeline-item card-tech">
+                            <h4>10th Standard</h4>
+                            <p class="institution">JNV Calicut</p>
+                            <div class="timeline-meta">
+                                <span>2020</span>
+                                <span>Passed with 78%</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="experience-section">
+                    <div class="section-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <rect x="2" y="3" width="20" height="14" rx="2" ry="2"/>
+                            <line x1="8" y1="21" x2="16" y2="21"/>
+                            <line x1="12" y1="17" x2="12" y2="21"/>
+                        </svg>
+                    </div>
+                    <h3>Experience</h3>
+                    
+                    <div class="timeline">
+                        <div class="timeline-item card-tech">
+                            <h4>Data Science & Analytics Intern</h4>
+                            <p class="institution">Kerala State Electronics Development Corporation Ltd. (KELTRON)</p>
+                            <div class="timeline-meta">
+                                <span>Calicut</span>
+                                <span>1 week</span>
+                            </div>
+                            <p class="timeline-description">Gained hands-on experience in data science methodologies and analytics tools.</p>
+                        </div>
+                        
+                        <div class="timeline-item card-tech">
+                            <h4>YouTube Creator</h4>
+                            <p class="institution">@ANIME._Mix</p>
+                            <div class="timeline-meta">
+                                <span>Online</span>
+                                <span>3 years</span>
+                            </div>
+                            <p class="timeline-description">Content creation and video editing, building audience engagement and storytelling skills.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="resume-download">
+                <button class="btn btn-hero">
+                    <svg class="btn-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M21 15v4a2 2 0 01-2 2H5a2 2 0 01-2-2v-4"/>
+                        <polyline points="7,10 12,15 17,10"/>
+                        <line x1="12" y1="15" x2="12" y2="3"/>
+                    </svg>
+                    <a href="Document1.docx" download="Adwaith_Resume.docx" class="btn">Download Resume</a>
+
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Featured Projects</h2>
+                <p class="section-description">
+                    A collection of innovative projects showcasing my expertise in IoT, 
+                    web development, and machine learning.
+                </p>
+            </div>
+            
+            <div class="projects-grid">
+                <div class="project-card card-project">
+                    <div class="project-icon icon-primary">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M5 12.55a11 11 0 01.01-2.55"/>
+                            <path d="M13.43 12.8a11 11 0 01-1.43-2.8"/>
+                            <path d="M8.21 12.4a11 11 0 00.79 2.6"/>
+                            <path d="M12 12v.01"/>
+                            <path d="M3 12a9 9 0 019-9 9.75 9.75 0 016.74 2.74L21 8"/>
+                            <path d="M21 3v5h-5"/>
+                        </svg>
+                    </div>
+                    <h3>Wireless Human Motion Detection System</h3>
+                    <p>Smart motion detection system using ESP32, NRF24L01, and Blynk Cloud integration for real-time monitoring.</p>
+                    <div class="tech-stack">
+                        <span class="tech-tag">ESP32</span>
+                        <span class="tech-tag">NRF24L01</span>
+                        <span class="tech-tag">Blynk</span>
+                        <span class="tech-tag">IoT</span>
+                        <span class="tech-tag">Sensors</span>
+                    </div>
+                    <div class="project-links">
+                        <button class="btn btn-outline btn-sm" disabled>
+                            <svg class="btn-icon" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+                            </svg>
+                            Private Repo
+                        </button>
+                    </div>
+                    <div class="project-overlay"></div>
+                </div>
+                
+                <div class="project-card card-project">
+                    <div class="project-icon icon-secondary">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M22 10v6M2 10l10-5 10 5-10 5z"/>
+                            <path d="M6 12v5c3 3 9 3 12 0v-5"/>
+                        </svg>
+                    </div>
+                    <h3>Student-Teacher Academic Application</h3>
+                    <p>Python and MySQL-based app where teachers manage questions, track activities, and handle student records, while students attend quizzes and mark attendance.</p>
+                    <div class="tech-stack">
+                        <span class="tech-tag">Python</span>
+                        <span class="tech-tag">Tkinter </span>
+                        <span class="tech-tag">MySQL</span>
+                    </div>
+                    <div class="project-links">
+                        <button class="btn btn-outline btn-sm" disabled>
+                            <svg class="btn-icon" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.30.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+                            </svg>
+                            Private Repo
+                        </button>
+                    </div>
+                    <div class="project-overlay"></div>
+                </div>
+                
+                <div class="project-card card-project">
+                    <div class="project-icon icon-accent">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M14.7 6.3a1 1 0 000 1.4l1.6 1.6a1 1 0 001.4 0l3.77-3.77a6 6 0 01-7.94 7.94l-6.91 6.91a2.12 2.12 0 01-3-3l6.91-6.91a6 6 0 017.94-7.94l-3.76 3.76z"/>
+                        </svg>
+                    </div>
+                    <h3>Web Games Collection</h3>
+                    <p>Interactive web games including TicTacToe and Stone Paper Scissors with modern UI/UX.</p>
+                    <div class="tech-stack">
+                        <span class="tech-tag">JavaScript</span>
+                        <span class="tech-tag">HTML5</span>
+                        <span class="tech-tag">CSS3</span>
+                        <span class="tech-tag">Game Logic</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="https://github.com/Manu10077/webgame" target="_blank" class="btn btn-outline btn-sm">
+                            <svg class="btn-icon" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+                            </svg>
+                            Code
+                        </a>
+                        <a href="https://webgame-sigma.vercel.app/" target="_blank" class="btn btn-hero btn-sm">
+                            <svg class="btn-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6"/>
+                                <polyline points="15,3 21,3 21,9"/>
+                                <line x1="10" y1="14" x2="21" y2="3"/>
+                            </svg>
+                            Live Demo
+                        </a>
+                    </div>
+                    <div class="project-overlay"></div>
+                </div>
+                
+                <div class="project-card card-project">
+                    <div class="project-icon icon-primary">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z"/>
+                        </svg>
+                    </div>
+                    <h3>Number Prediction from Image</h3>
+                    <p>AI-powered digit recognition tool using machine learning algorithms for accurate number prediction.</p>
+                    <div class="tech-stack">
+                        <span class="tech-tag">Python</span>
+                        <span class="tech-tag">Machine Learning</span>
+                        <span class="tech-tag">Computer Vision</span>
+                        <span class="tech-tag">AI</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="https://predict-ai.onrender.com/" target="_blank" class="btn btn-hero btn-sm">
+                            <svg class="btn-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+                                <polyline points="15,3 21,3 21,9"/>
+                                <line x1="10" y1="14" x2="21" y2="3"/>
+                            </svg>
+                            Live Demo
+                        </a>
+                    </div>
+                    <div class="project-overlay"></div>
+                </div>
+            </div>
+            
+            <div class="more-projects">
+                <a href="https://github.com/Manu10077" target="_blank" class="btn btn-outline">
+                    <svg class="btn-icon" viewBox="0 0 24 24" fill="currentColor">
+                        <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+                    </svg>
+                    View All Projects on GitHub
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="services">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Services Offered</h2>
+                <p class="section-description">
+                    Specialized services in IoT development, web applications, and technology consulting 
+                    to bring your innovative ideas to life.
+                </p>
+            </div>
+            
+            <div class="services-grid">
+                <div class="service-card card-tech">
+                    <div class="service-icon icon-primary">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <rect x="4" y="4" width="16" height="12" rx="2"/>
+                            <path d="M8 16l4-4 4 4"/>
+                            <circle cx="8" cy="8" r="2"/>
+                        </svg>
+                    </div>
+                    <h3>IoT System Development</h3>
+                    <p>Design and develop smart systems using ESP32, sensors, and cloud platforms like Blynk for real-time monitoring and control.</p>
+                    <div class="service-features">
+                        <div class="feature-item">
+                            <div class="feature-dot"></div>
+                            <span>ESP32 Programming</span>
+                        </div>
+                        <div class="feature-item">
+                            <div class="feature-dot"></div>
+                            <span>Sensor Integration</span>
+                        </div>
+                        <div class="feature-item">
+                            <div class="feature-dot"></div>
+                            <span>Wireless Communication</span>
+                        </div>
+                        <div class="feature-item">
+                            <div class="feature-dot"></div>
+                            <span>Cloud Connectivity</span>
+                        </div>
+                    </div>
+                    <div class="service-overlay"></div>
+                </div>
+                
+                <div class="service-card card-tech">
+                    <div class="service-icon icon-secondary">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <circle cx="12" cy="12" r="10"/>
+                            <line x1="2" y1="12" x2="22" y2="12"/>
+                            <path d="M12 2a15.3 15.3 0 014 10 15.3 15.3 0 01-4 10 15.3 15.3 0 01-4-10 15.3 15.3 0 014-10z"/>
+                        </svg>
+                    </div>
+                    <h3>Full-Stack Web Development</h3>
+                    <p>Build responsive web applications with modern frontend frameworks and robust backend systems with database integration.</p>
+                    <div class="service-features">
+                        <div class="feature-item">
+                            <div class="feature-dot"></div>
+                            <span>React/JavaScript</span>
+                        </div>
+                        <div class="feature-item">
+                            <div class="feature-dot"></div>
+                            <span>Node.js Backend</span>
+                        </div>
+                        <div class="feature-item">
+                            <div class="feature-dot"></div>
+                            <span>MySQL Database</span>
+                        </div>
+                        <div class="feature-item">
+                            <div class="feature-dot"></div>
+                            <span>Responsive Design</span>
+                        </div>
+                    </div>
+                    <div class="service-overlay"></div>
+                </div>
+                
+                <div class="service-card card-tech">
+                    <div class="service-icon icon-accent">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z"/>
+                        </svg>
+                    </div>
+                    <h3>Tech Consultation</h3>
+                    <p>Provide expert guidance on prototyping, automation systems, and technology integration for your projects.</p>
+                    <div class="service-features">
+                        <div class="feature-item">
+                            <div class="feature-dot"></div>
+                            <span>System Architecture</span>
+                        </div>
+                        <div class="feature-item">
+                            <div class="feature-dot"></div>
+                            <span>Technology Selection</span>
+                        </div>
+                        <div class="feature-item">
+                            <div class="feature-dot"></div>
+                            <span>Prototyping</span>
+                        </div>
+                        <div class="feature-item">
+                            <div class="feature-dot"></div>
+                            <span>Automation Solutions</span>
+                        </div>
+                    </div>
+                    <div class="service-overlay"></div>
+                </div>
+            </div>
+            
+            <div class="services-cta card-tech">
+                <h3>Ready to Start Your Project?</h3>
+                <p>Let's discuss how I can help bring your technical vision to reality. 
+                From concept to deployment, I'm here to support your journey.</p>
+                <button class="btn btn-hero" onclick="scrollToSection('contact')">
+                    Get Started Today
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Get In Touch</h2>
+                <p class="section-description">
+                    Ready to collaborate on your next project? Let's discuss how we can work together 
+                    to bring your ideas to life.
+                </p>
+            </div>
+            
+            <div class="contact-content">
+                <div class="contact-form-section">
+                    <div class="card-tech">
+                        <h3>Send a Message</h3>
+                        <form id="contactForm" class="contact-form"
+                            action="https://formspree.io/f/mldloaag" 
+                            method="POST">
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="name">Your Name</label>
+                                    <input type="text" id="name" name="name" required placeholder="John Doe">
+                                </div>
+                                <div class="form-group">
+                                    <label for="email">Email Address</label>
+                                    <input type="email" id="email" name="email" required placeholder="john@example.com">
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="subject">Subject</label>
+                                <input type="text" id="subject" name="subject" required placeholder="Project Collaboration">
+                            </div>
+                            <div class="form-group">
+                                <label for="message">Message</label>
+                                <textarea id="message" name="message" required rows="6" placeholder="Tell me about your project idea..."></textarea>
+                            </div>
+                            <button type="submit" class="btn btn-hero form-submit">
+                                <svg class="btn-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <line x1="22" y1="2" x2="11" y2="13"/>
+                                    <polygon points="22,2 15,22 11,13 2,9 22,2"/>
+                                </svg>
+                                Send Message
+                            </button>
+                        </form>
+                        <p id="thankYouMessage" style="display:none; color: #00ff99; margin-top: 10px;">
+                            ✅ Thank you! Your message has been sent.
+                        </p>
+                    </div>
+                </div>
+                
+                <div class="contact-info-section">
+                    <div class="contact-info card-tech">
+                        <h3>Contact Information</h3>
+                        <div class="contact-items">
+                            <div class="contact-item">
+                                <div class="contact-icon">
+                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
+                                        <polyline points="22,6 12,13 2,6"/>
+                                    </svg>
+                                </div>
+                                <div class="contact-details">
+                                    <p class="contact-label">Email</p>
+                                    <a href="mailto:adwaithaadhi12@gmail.com" class="contact-value">adwaithaadhi12@gmail.com</a>
+                                </div>
+                            </div>
+                            
+                            <div class="contact-item">
+                                <div class="contact-icon">
+                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72 12.84 12.84 0 00.7 2.81 2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45 12.84 12.84 0 002.81.7A2 2 0 0122 16.92z"/>
+                                    </svg>
+                                </div>
+                                <div class="contact-details">
+                                    <p class="contact-label">Phone</p>
+                                    <a href="tel:+917025524065" class="contact-value">+91 7025524065</a>
+                                </div>
+                            </div>
+                            
+                            <div class="contact-item">
+                                <div class="contact-icon">
+                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/>
+                                        <circle cx="12" cy="10" r="3"/>
+                                    </svg>
+                                </div>
+                                <div class="contact-details">
+                                    <p class="contact-label">Location</p>
+                                    <p class="contact-value">Calicut, Kerala, India</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="social-connect card-tech">
+                        <h3>Connect With Me</h3>
+                        <div class="social-grid">
+                            <a href="https://github.com/Manu10077" target="_blank" class="social-card">
+                                <svg viewBox="0 0 24 24" fill="currentColor">
+                                    <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+                                </svg>
+                                <span>GitHub</span>
+                            </a>
+                            
+                            <a href="https://www.linkedin.com/in/adwaith-p-b465b2293" target="_blank" class="social-card">
+                                <svg viewBox="0 0 24 24" fill="currentColor">
+                                    <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
+                                </svg>
+                                <span>LinkedIn</span>
+                            </a>
+                            
+                            <a href="https://www.youtube.com/@ANIME._Mix" target="_blank" class="social-card">
+                                <svg viewBox="0 0 24 24" fill="currentColor">
+                                    <path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/>
+                                </svg>
+                                <span>YouTube</span>
+                            </a>
+                        </div>
+                    </div>
+                    
+                    <div class="availability card-tech">
+                        <h3>Availability</h3>
+                        <p>I'm currently available for freelance projects and internship opportunities. 
+                        Typically respond within 24 hours. Let's build something amazing together!</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-text">
+                    <p>© 2024 Adwaith P. Built with 
+                        <svg class="heart-icon" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M20.84 4.61a5.5 5.5 0 00-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 00-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 000-7.78z"/>
+                        </svg>
+                        using HTML, CSS & JavaScript
+                    </p>
+                </div>
+                <button class="scroll-top-btn" id="scrollTopBtn">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <line x1="12" y1="19" x2="12" y2="5"/>
+                        <polyline points="5,12 12,5 19,12"/>
+                    </svg>
+                </button>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Success Message Toast -->
+    <div id="toast" class="toast">
+        <div class="toast-content">
+            <svg class="toast-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M9 12l2 2 4-4"/>
+                <circle cx="12" cy="12" r="10"/>
+            </svg>
+            <span class="toast-message">Message sent successfully! I'll get back to you soon.</span>
+        </div>
+    </div>
+
+    <script src="portfolio.js"></script>
+</body>
+</html>
